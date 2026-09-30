@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+  <style>
+    .bg{fill:#151515} .ring{fill:none;stroke:#e8e7e4;stroke-width:6} .crack{stroke:#151515}
+    @media (prefers-color-scheme: dark){ .bg{fill:#e8e7e4} .ring{stroke:#151515} .crack{stroke:#e8e7e4} }
+  </style>
+  <circle class="bg" cx="70" cy="70" r="66"/>
+  <ellipse class="ring" cx="72" cy="68" rx="52" ry="49"/>
+  <ellipse class="ring" cx="73" cy="67" rx="38" ry="35"/>
+  <ellipse class="ring" cx="75" cy="66" rx="25" ry="22"/>
+  <ellipse class="ring" cx="76" cy="65" rx="12" ry="10"/>
+  <path class="crack" d="M77 66 L101 122" stroke-width="9" stroke-linecap="round"/>
+</svg>
