@@ -195,7 +195,10 @@ section{padding-block:80px}
   .see-more:hover{transform:translateY(-1px)}
   .see-more:hover .arr{transform:translateX(4px)}
 }
-.family{margin-top:88px;background:var(--ink);color:var(--on-ink);border-radius:2px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;align-items:center}
+.family{margin-top:88px;background:var(--ink);color:var(--on-ink);border-radius:2px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+.family .body p{max-width:62ch}
+.family:has(.family-photo){grid-template-columns:minmax(0,240px) 1fr}
+.family-photo{display:block;width:100%;max-width:240px;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 35%;border-radius:2px;background:var(--panel)}
 .family h2{font-size:clamp(28px,4vw,44px);text-transform:uppercase}
 .family .body{display:flex;flex-direction:column;gap:16px}
 .family p{font-size:17px;opacity:.9}
@@ -205,7 +208,8 @@ section{padding-block:80px}
   .svc-row.flip .svc-photo{order:0}
   .svc-list{gap:48px}
   .svc-body ul{grid-template-columns:1fr}
-  .family{grid-template-columns:1fr;gap:20px}
+  .family,.family:has(.family-photo){grid-template-columns:1fr;gap:20px}
+  .family-photo{max-width:200px}
 }
 
 footer{padding-block:40px 48px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
@@ -303,9 +307,7 @@ footer{padding-block:40px 48px;display:flex;justify-content:space-between;align-
       </article>
     </div>
     <div class="family">
-      <h2 class="display">Aim for Succession</h2>
       <div class="body">
-        <p>I'm Brayden Sanford, the third generation in my family to work in the trade. I have more than two years of hands-on experience on job sites, and I bring the same work ethic my grandfather and father built their careers on.</p>
         <a href="#about">More about me →</a>
       </div>
     </div>
